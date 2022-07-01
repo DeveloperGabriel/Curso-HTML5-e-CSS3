@@ -1,0 +1,149 @@
+header {
+    /*cabeçaçho da página*/
+    background-color: #bbbbbb;
+    /*cor de fundo*/
+    padding: 20px 0;
+    /*espaçamento interno*/
+    /*20px pra cima e pra baixo e zero para esquerda e direita*/
+}
+
+.caixa {
+    position: relative;
+    width: 940px;
+    /*largura normalmente usada*/
+    margin: 0 auto;
+    /*pra cima e baixo é zero, pra esquerda e direta é centralizada*/
+}
+
+nav {
+    position: absolute;
+    /*determina a posição inicial no site*/
+    top: 110px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    /* formato de linha para os links*/
+    margin: 0 0 0 15px;
+    /*espaçamento externo*/
+    /*tamanho da margem modificada apenas na ultima posição*/
+}
+
+nav a {
+    /*links de navegação*/
+    text-transform: uppercase;
+    /*os links ficam em maiúsculo*/
+    color: #000000;
+    /*cor dos links*/
+    font-weight: bold;
+    /*adciona negrito aos links*/
+    font-size: 22px;
+    /*tamanho dos links*/
+    text-decoration: none;
+    /*retira o sublinhado padrão do navegador*/
+}
+
+    nav a:hover{ /*permite dar uma interação ao passar o mouse*/
+    color: #C78C19;
+    text-decoration: underline; /*sublinha a linha quando o mouse é passado*/
+}
+
+
+.produtos {
+    /*modificando a ul*/
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.produtos li {
+    /*modificando as listas*/
+    display: inline-block;
+    /*ocupam o tamanho do conteudo sendo possível ajustar*/
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    /*o inline alinha pela linha de baixo, com este comando alinhamos pela linha de cima*/
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    /*evita que o item da lista quebre para linha de baixo, é um calculo de px + %*/
+    border-color: #000000;
+    border-width: 2px;
+    border-style: solid;
+    border: 2px solid #000000;
+    /*ou dessa forma mais util*/
+    border-radius: 10px;
+    /*arredondandos as bordas com um raios de um circulo*/
+}
+
+.produtos li:hover{ /*mesma interação de passar o mouse*/
+    border-color:#C78C19;
+}
+
+.produtos li:active{ /*ao clicar no item*/
+border-color: #088C19;;
+}
+
+.produtos li:hover h2{ /*quando o mouse passar por cima dos produtos, o titulo também aumentará a fonte*/
+    font-size: 34px;
+}
+
+.produtos h2 {
+    /*modificando os títulos das listas*/
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-descricao {
+    font-size: 18px;
+}
+
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer{ /*configurando o rodape*/
+    text-align: center;
+    background:url(bg.jpg); /*essa propriedade replica uma imagem diversas vezes até preencher o rodape na parte do fundo*/
+    padding: 40px 0;
+}
+
+.copyright{ /*classe para mudar o texto de copyright*/
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px 0 0;
+}
+
+main {
+    width: 900px; /*centraliza todo o conteúdo do main*/
+    margin: 0 auto; /*alterna o espaçamento externo para se ajustar automaticamente entre a largura*/
+}
+
+form{
+    margin: 40px 0; /*faz um espaçamento externo entre o header e o main*/
+}
+
+form label, form p { /*mechendo no texto em cima da caixa*/
+    display:block; /*permite que ele fique um abaixo do outro ao invéz de na mesma linha*/
+    font-size: 20px; /*aumenta a fonte do texto*/
+    margin: 0 0 10px; /*aumenta somente a largura do espaçamento externo */
+}
+
+.input-padrao{ /*mudando a caixa de entrada dos dados*/
+    display: block; /*fz com que fiquem uma em baixo da outra, sem isso elas estariam inline*/
+    margin: 20px  0; /*espaçamento externo mechendo apenas a altura pra cima e para baixo*/
+    padding: 10px 25px; /*mechendo o espaçamento interno da caixa de entrada */
+    width: 50%; /*aumentando o tamanho da largura em metade da página*/
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+.teste{
+color:#088C19; /*ordem de força, inline, id, class, form p, p.....a prioridade de uma mudança de cor nesse exemplo, será definida pela força de uma tag ou propriedade*/
+}
